@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background-color: #fafafa;
     display: flex;
     justify-content: center;
@@ -11,21 +11,20 @@ body {
 .container {
     max-width: 350px;
     width: 100%;
-    margin: 0 auto;
     text-align: center;
 }
 
 .login-form {
     background-color: #fff;
     border: 1px solid #dbdbdb;
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 10px;
 }
 
 .login-form h1 {
     font-family: 'Cookie', cursive;
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin: 20px 0;
 }
 
 .login-form form {
@@ -37,7 +36,8 @@ body {
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #dbdbdb;
-    border-radius: 5px;
+    border-radius: 3px;
+    background-color: #fafafa;
 }
 
 .login-form button {
@@ -46,26 +46,63 @@ body {
     border: none;
     padding: 10px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.login-form .facebook-login {
-    background-color: #3b5998;
+.facebook-login {
+    background-color: #4267B2;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    width: 100%;
 }
 
 .divider {
-    margin: 20px 0;
+    margin: 10px 0;
     color: #999;
+    position: relative;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    background-color: #dbdbdb;
+    height: 1px;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.forgot-password {
+    color: #00376b;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
 .signup-link {
     padding: 20px;
     background-color: #fff;
     border: 1px solid #dbdbdb;
+    font-size: 14px;
 }
 
 .signup-link a {
     color: #3897f0;
     text-decoration: none;
+    font-weight: bold;
 }
