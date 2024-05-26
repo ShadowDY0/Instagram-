@@ -15,7 +15,6 @@ body {
 }
 
 .login-form {
-    background-color: #fff;
     padding: 20px;
     margin-bottom: 10px;
 }
@@ -95,7 +94,6 @@ body {
 
 .signup-link {
     padding: 20px;
-    background-color: #fff;
     font-size: 14px;
 }
 
